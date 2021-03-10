@@ -13,8 +13,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 60px;
-  top: 10vh;
-  height: 80vh;
+  height: 100vh;
   position: fixed;
   margin: 0;
   padding-left: 0;
@@ -30,7 +29,7 @@
 }
 
 .nav-item:hover, .nav-item.active {
-  background-color: #FCCEEA;
+  background-color: #FBCEEA;
 }
 
 .nav-item:hover::before, .nav-item.active::before {
@@ -44,8 +43,8 @@
 }
 
 .nav-item:hover a:link, .nav-item:hover a:visited, .nav-item.active a:link, .nav-item.active a:visited {
-  color: white;
-  background-color: #FCCEEA;
+  color: #7e78fd;
+  background-color: #FBCEEA;
 }
 
 .nav-item:hover a::before, .nav-item.active a::before {
@@ -75,7 +74,7 @@
   position: relative;
   padding: 10px 0px 10px 10px;
   background-color: white;
-  color: #FCCEEA;
+  color: #cbaef4;
   width: 40px;
   margin-left: 10px;
   font-size: 1.2em;

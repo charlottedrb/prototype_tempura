@@ -12,8 +12,7 @@
     justify-content: center;
     align-items: center;
     width: 60px;
-    top: 10vh;
-    height: 80vh;
+    height: 100vh;
     position: fixed;
     margin: 0;
     padding-left: 0;
@@ -41,7 +40,7 @@
 
             a{
                 &:link, &:visited{
-                    color: white;
+                    color: $primary;
                     background-color: $pink;
                 }
 
@@ -75,7 +74,7 @@
                 position: relative;
                 padding: 10px 0px 10px 10px;
                 background-color: white;
-                color: $pink;
+                color: $tertiary;
                 width: 40px;
                 margin-left: 10px;
                 font-size: 1.2em;
