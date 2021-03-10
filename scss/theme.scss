@@ -1,0 +1,39 @@
+
+//////////////////////////////////////////////////////////////////////////
+//
+//
+//				APPEL DES FICHIERS PARTIELS A COMPILER
+//				pour le css de base
+//
+//
+//////////////////////////////////////////////////////////////////////////
+
+//////////////////// VARIABLES / FONCTIONS / MIXINS / ICONES / ANIMATIONS ////////////////////
+ 
+@import 'general';
+
+////////////////// INTERFACE //////////////////
+
+@import 'interface/nav';
+@import 'interface/sidebar';
+
+body{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+
+    div.background{
+        width: 100vw;
+        height: 100vh;
+        background: rgb(250,210,230);
+        background: linear-gradient(111deg, rgba(250,210,230,1) 0%, rgba(192,193,255,1) 100%); 
+    }
+
+    div.container{
+        position: absolute;
+        left: 15rem;
+        height: 100vh;
+        background-color: red;
+    }
+}
