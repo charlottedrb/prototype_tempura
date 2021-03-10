@@ -1,13 +1,24 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const nav = document.querySelector('.nav')
-    const sidebar = document.querySelector('.sidebar')
-    const container = document.querySelector('.container')
+// document.addEventListener('DOMContentLoaded', () => {
+//     const nav = document.querySelector('.nav')
+//     const sidebar = document.querySelector('.sidebar')
+//     const container = document.querySelector('.container')
 
-    console.log(nav.offsetWidth)
-    console.log(sidebar.offsetWidth)
+//     console.log(nav.offsetWidth)
+//     console.log(sidebar.offsetWidth)
     
-    container.style.left = window.width - nav.width
-    container.style.right = window.width - sidebar.width
+//     container.style.left = window.width - nav.width
+//     container.style.right = window.width - sidebar.width
+// })
+
+
+items = document.querySelectorAll(".nav-item")
+items.forEach((item) => {
+    item.addEventListener("click", () => {
+        for(let itemWhenClick of items)  {
+            itemWhenClick.classList.remove("active")
+        }
+        item.classList.add("active")
+    })
 })
 
 // let canvas = document.getElementById('pointer')

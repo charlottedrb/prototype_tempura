@@ -29,11 +29,11 @@
   position: relative;
 }
 
-.nav-item.active {
+.nav-item:hover, .nav-item.active {
   background-color: #FCCEEA;
 }
 
-.nav-item.active::before {
+.nav-item:hover::before, .nav-item.active::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -43,26 +43,12 @@
   background-color: white;
 }
 
-.nav-item a:link, .nav-item a:visited {
-  display: block;
-  position: relative;
-  padding: 10px 0px 10px 10px;
-  background-color: white;
-  color: #EEAACC;
-  width: 40px;
-  margin-left: 10px;
-  font-size: 1.2em;
-  text-decoration: none;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.nav-item.active a:link, .nav-item.active a:visited {
+.nav-item:hover a:link, .nav-item:hover a:visited, .nav-item.active a:link, .nav-item.active a:visited {
   color: white;
   background-color: #FCCEEA;
 }
 
-.nav-item.active a::before {
+.nav-item:hover a::before, .nav-item.active a::before {
   content: "";
   position: absolute;
   top: -15px;
@@ -73,7 +59,7 @@
   border-bottom-right-radius: 15px;
 }
 
-.nav-item.active a::after {
+.nav-item:hover a::after, .nav-item.active a::after {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -82,6 +68,20 @@
   height: 15px;
   background-color: white;
   border-top-right-radius: 15px;
+}
+
+.nav-item a:link, .nav-item a:visited {
+  display: block;
+  position: relative;
+  padding: 10px 0px 10px 10px;
+  background-color: white;
+  color: #FCCEEA;
+  width: 40px;
+  margin-left: 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .sidebar {
