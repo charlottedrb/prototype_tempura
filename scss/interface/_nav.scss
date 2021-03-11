@@ -20,6 +20,12 @@
     border-top-right-radius: 60px;
     border-bottom-right-radius: 60px;
 
+    @include responsive-entre(xs, sm){
+        flex-direction: row;
+        width: 100vw;
+        height: 60px;
+    }
+
     &-item{
         list-style-type: none;
         padding: 15px 0px;
